@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+
+
+<div><h3>Active Todos</h3></div>
+<div id="active" ></div>
+<br>
+<hr>
+<div><h3>Add New Todo</h3></div>
+<form>
+    <input type="text" id="newtodo" placeholder="enter the new todo">
+    <input type="button" onclick="AddTodo()" value="Add new todo">
+</form><br><hr>
+<div><h3>Completed Todos</h3></div><div align="right"><a href="javascript:hidecomplete()" id="visiblecompleteanchor" style = "display:table">Hide Completed List</a><a href="javascript:showcomplete()" id="hiddencompleteanchor" style = "display:none">Show Completed List</a></div>
+<div id="complete" style = "display:table"></div>
+
+<br><hr>
+<div><h3>Deleted Todos</h3></div><div align="right"><a href="javascript:hidedelete()" id="visibledeleteanchor" style = "display:table">Hide Deleted List</a><a href="javascript:showdelete()" id="hiddendeleteanchor" style = "display:none">Show Deletes List</a></div>
+
+<div id="deleted" style = "display:table"></div>
+
+
+</body>
+</html>
